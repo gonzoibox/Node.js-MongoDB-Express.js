@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/gonzoibox/Node.js-MongoDB-Express.js/issues"
   },
-  "homepage": "https://github.com/gonzoibox/Node.js-MongoDB-Express.js#readme"
+  "homepage": "https://github.com/gonzoibox/Node.js-MongoDB-Express.js#readme",
+  "devDependencies": {
+    "eslint": "^5.15.3",
+    "eslint-plugin-node": "^8.0.1"
+  }
 }
