@@ -1,10 +1,11 @@
 {
-  "name": "app",
+  "name": "your-module",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "dev": "nodemon index.js"
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,13 @@
   "homepage": "https://github.com/gonzoibox/Node.js-MongoDB-Express.js#readme",
   "devDependencies": {
     "eslint": "^5.15.3",
-    "eslint-plugin-node": "^8.0.1"
+    "eslint-plugin-node": "^8.0.1",
+    "nodemon": "^1.18.10"
+  },
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "dependencies": {
+    "express": "^4.16.4"
   }
 }
