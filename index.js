@@ -1,9 +1,24 @@
-var express = require('express');
-var app = express();
+const express = require('express');
+const bodyParser = require('body-parser');
 
-app.get('/', function (req, res) {
-  res.send('Hello World!');
+const app = express();
+
+
+app.set('view engine', 'ejs');
+app.use(bodyParser.urlencoded({ extended: true}));
+
+
+const arr = [];
+app.get('/', (req, res) => res.render('index', {arr: arr}));
+
+app.get('/create', (req, res) => res.render('create'));
+app.post('/create', (req, res) => {
+ arr.push(req.body.text);
+  res.redirect('/');
 });
+
+
+
 
 app.listen(3000, function () {
   console.log('Example app listening on port 3000!');
