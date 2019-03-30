@@ -8,7 +8,7 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({ extended: true}));
 
 
-const arr = [];
+const arr = ['1', '2'];
 app.get('/', (req, res) => res.render('index', {arr: arr}));
 
 app.get('/create', (req, res) => res.render('create'));
