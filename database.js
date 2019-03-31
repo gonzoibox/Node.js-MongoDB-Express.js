@@ -11,6 +11,6 @@ module.exports = () => {
             .on('close', () => console.log('Database connection closed'))
             .on('open', () => resolve(mongoose.connection[0]));
 
-        mongoose.connect(config.MONGO_URL, { useNewUrlParser: true});
+        mongoose.connect(config.MONGO_URL, { useNewUrlParser: true });
     });
 };
