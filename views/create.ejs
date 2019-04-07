@@ -1,12 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>EJS</title>
-</head>
-<body>
+<% include layout/header.ejs %>
+
     <h1>Hello EJS Form!</h1>
     <form method="post">
         <input type="text" name="title">
@@ -15,5 +8,5 @@
         <br>
         <button type="submit">Submit</button>
     </form>
-</body>
-</html>
+
+<% include layout/footer.ejs %>
