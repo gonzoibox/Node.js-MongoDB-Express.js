@@ -20,7 +20,7 @@ app.post('/create', (req, res) => {
   Post.create({
     title: title,
     body: body
-  }).then(post => console.log(post._id));
+  }).then(post => console.log(post.id));
   
   res.redirect('/');
 });
