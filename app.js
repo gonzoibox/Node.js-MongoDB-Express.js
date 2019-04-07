@@ -14,6 +14,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.get('/', (req, res) => {
   Post.find({}).then(posts => {
     res.render('index', { posts : posts });
+  }).catch(err => {
+    res.status(200).json({ err: err});
   });
 });
 
